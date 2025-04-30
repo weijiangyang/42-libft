@@ -6,11 +6,11 @@
 /*   By: weiyang <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 07:29:30 by weiyang           #+#    #+#             */
-/*   Updated: 2025/04/29 07:34:23 by weiyang          ###   ########.fr       */
+/*   Updated: 2025/04/30 14:23:16 by weiyang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char *ft_strrchr(const char *s, int c)
+char	*ft_strrchr(const char *s, int c)
 {
 	char	lastoccurrence;
 
@@ -22,6 +22,6 @@ char *ft_strrchr(const char *s, int c)
 		s++;
 	}
 	if (c == '\0')
-		return (char *)s;
+		return ((char *)s);
 	return (lastoccurrence);
 }

@@ -6,16 +6,16 @@
 /*   By: weiyang <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/25 12:18:38 by weiyang           #+#    #+#             */
-/*   Updated: 2025/04/25 12:31:01 by weiyang          ###   ########.fr       */
+/*   Updated: 2025/04/30 13:40:40 by weiyang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <strings.h>
 
-void ft_bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
-	size_t		i;
-	unsigned char *mem;
+	size_t			i;
+	unsigned char	*mem;
 
 	i = 0;
 	while (i < n)

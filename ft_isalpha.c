@@ -6,14 +6,14 @@
 /*   By: weiyang <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/25 10:05:00 by weiyang           #+#    #+#             */
-/*   Updated: 2025/04/25 10:26:29 by weiyang          ###   ########.fr       */
+/*   Updated: 2025/04/30 12:17:52 by weiyang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isalpha(int c)
 {
 	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
-	       return (1);
+		return (1);
 	else
 		return (0);
 }
@@ -30,4 +30,3 @@ int main(void)
 	printf("the result is %d", result);
 	return (0);
 }*/
-

@@ -6,7 +6,7 @@
 /*   By: weiyang <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/30 08:15:57 by weiyang           #+#    #+#             */
-/*   Updated: 2025/04/30 11:05:51 by weiyang          ###   ########.fr       */
+/*   Updated: 2025/04/30 16:30:24 by weiyang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	len_number(int n)
 {
-	int	count;
+	int		count;
 	long	nb;
 
 	nb = n;
@@ -34,16 +34,16 @@ int	len_number(int n)
 
 char	*ft_itoa(int n)
 {
-	int	len_nbr;
+	int		len_nbr;
 	char	*str;
-	int	i;
+	int		i;
 	long	nb;
 
 	nb = n;
 	len_nbr = len_number(nb);
 	i = len_nbr - 1;
 	str = (char *)malloc (sizeof (char) * (len_nbr + 1));
-	if(!str)
+	if (!str)
 		return (NULL);
 	if (nb < 0)
 	{
@@ -52,15 +52,15 @@ char	*ft_itoa(int n)
 	}
 	if (nb == 0)
 		str[0] = '0';
-	while (nb  > 0)
+	while (nb > 0)
 	{
 		str[i] = nb % 10 + '0';
 		i--;
 		nb /= 10;
 	}
-	return (str);	
+	return (str);
 }
-
+/*
 #include <stdio.h>
 
 int	main(void)
@@ -74,4 +74,4 @@ int	main(void)
 	str = ft_itoa(n);
 	printf("the result is %s", str);
 	return (0);
-}
+}*/

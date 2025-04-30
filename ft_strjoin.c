@@ -6,23 +6,22 @@
 /*   By: weiyang <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 09:32:36 by weiyang           #+#    #+#             */
-/*   Updated: 2025/04/29 09:44:13 by weiyang          ###   ########.fr       */
+/*   Updated: 2025/04/30 14:35:11 by weiyang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-char *ft_strjoin(char const *s1, char const *s2)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*ptr;
 	char	*dst;
 
 	if (!s1)
-                s1 = "";
-        if (!s2)
-                s2 = "";
-
-	ptr = malloc ((ft_strlen(s1) + ft_strlen(s2) + 1 ) * sizeof(char));
+		s1 = "";
+	if (!s2)
+		s2 = "";
+	ptr = malloc ((ft_strlen(s1) + ft_strlen(s2) + 1) * sizeof(char));
 	if (!ptr)
 		return (NULL);
 	dst = ptr;

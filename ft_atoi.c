@@ -6,18 +6,18 @@
 /*   By: weiyang <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 08:39:22 by weiyang           #+#    #+#             */
-/*   Updated: 2025/04/29 09:00:35 by weiyang          ###   ########.fr       */
+/*   Updated: 2025/04/30 14:29:00 by weiyang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_atoi(const char *nptr)
+int	ft_atoi(const char *nptr)
 {
 	int	result;
 	int	sign;
 
 	sign = 1;
 	result = 0;
-	while ( *nptr == ' ' || (*nptr >= '\t' && *nptr <= '\r'))
+	while (*nptr == ' ' || (*nptr >= '\t' && *nptr <= '\r'))
 		nptr++;
 	if (*nptr == '-' || *nptr == '+')
 	{
@@ -32,6 +32,3 @@ int ft_atoi(const char *nptr)
 	}
 	return (sign * result);
 }
-
-
-

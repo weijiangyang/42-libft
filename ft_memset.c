@@ -6,7 +6,7 @@
 /*   By: weiyang <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/25 10:42:15 by weiyang           #+#    #+#             */
-/*   Updated: 2025/04/25 10:57:20 by weiyang          ###   ########.fr       */
+/*   Updated: 2025/04/30 13:39:52 by weiyang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void	*memset(void *s, int c, size_t n)
 	return (s);
 }
 
-#include <stdio.h>
+/*#include <stdio.h>
 
 int	main(void)
 {
@@ -46,8 +46,4 @@ int	main(void)
 		i++;
 	}
 	return (0);
-}	
-
-
-
-
+}*/	

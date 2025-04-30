@@ -6,11 +6,11 @@
 /*   By: weiyang <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/30 11:08:04 by weiyang           #+#    #+#             */
-/*   Updated: 2025/04/30 11:20:51 by weiyang          ###   ########.fr       */
+/*   Updated: 2025/04/30 16:43:20 by weiyang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	int		size;
 	char	*result;
@@ -21,7 +21,7 @@ char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
 		return (NULL);
 	size = ft_strlen(s);
 	result = (char *)malloc ((size + 1) * sizeof(char));
-	if(!result)
+	if (!result)
 		return (NULL);
 	while (i < size)
 	{

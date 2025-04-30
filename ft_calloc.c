@@ -6,14 +6,14 @@
 /*   By: weiyang <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 09:00:45 by weiyang           #+#    #+#             */
-/*   Updated: 2025/04/29 09:07:00 by weiyang          ###   ########.fr       */
+/*   Updated: 2025/04/30 14:29:49 by weiyang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include <string.h>
 
-void *ft_calloc(size_t nmemb, size_t size)
+void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void	*ptr;
 

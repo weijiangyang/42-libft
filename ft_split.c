@@ -6,9 +6,11 @@
 /*   By: weiyang <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 10:24:55 by weiyang           #+#    #+#             */
-/*   Updated: 2025/04/30 08:14:23 by weiyang          ###   ########.fr       */
+/*   Updated: 2025/04/30 16:26:22 by weiyang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stdlib.h>
 
 int	count_words(char const *s, char c)
 {
@@ -44,11 +46,11 @@ int	len_word(char const *s, char c)
 	return (len);
 }
 
-char *write_word(char const *s, char c)
+char	*write_word(char const *s, char c)
 {
-	int	len;
+	int		len;
 	char	*word;
-	int	i;
+	int		i;
 
 	i = 0;
 	len = len_word(s, c);
@@ -64,27 +66,11 @@ char *write_word(char const *s, char c)
 	return (word);
 }
 
-void	free_split(char **arr, int i)
+char	**ft_split_1(char **arr, char const *s, char c, int nbr_words)
 {
-	while (i >= 0)
-	{
-		free(arr[i]);
-		i--;
-	}
-	free(arr);
-}
-
-char **ft_split(char const *s, char c)
-{
-	char	**arr;
 	int		i;
-	int		nbr_words;
 
 	i = 0;
-	nbr_words = count_words(s, c);
-	arr = (char **)malloc ((nbr_words + 1) * sizeof (char *));
-	if (!arr)
-		return (NULL);
 	while (i < nbr_words)
 	{
 		while (*s == c)
@@ -94,7 +80,8 @@ char **ft_split(char const *s, char c)
 			arr[i] = write_word(s, c);
 			if (!arr[i])
 			{
-				free_split(arr, i);
+				while (i >= 0)
+					free(arr[i--]);
 				return (NULL);
 			}
 			s += len_word(s, c);
@@ -105,15 +92,34 @@ char **ft_split(char const *s, char c)
 	return (arr);
 }
 
+char	**ft_split(char const *s, char c)
+{
+	char	**arr;
+	int		nbr_words;
 
-
-#include <stdio.h>
+	nbr_words = count_words(s, c);
+	arr = (char **)malloc ((nbr_words + 1) * sizeof (char *));
+	if (!arr)
+		return (NULL);
+	return (ft_split_1(arr, s, c, nbr_words));
+}
+/*#include <stdio.h>
 
 int	main(void)
 {
 	char const *s = "ab,cd,ef, g";
 	int	count = count_words(s,',');
-       	printf ("the nombre de mots est %d", count);
-	return (0);
-}	
+	char **result;
+	int	i;
+	int	nbr_words;
 
+	nbr_words = count_words(s, ',');
+	i = 0;
+	result = ft_split(s, ',');
+	while (i < nbr_words)
+	{
+		printf("%s\n", result[i]);
+		i++;
+	}
+	return (0);
+}*/	

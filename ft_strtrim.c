@@ -6,14 +6,14 @@
 /*   By: weiyang <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 09:44:25 by weiyang           #+#    #+#             */
-/*   Updated: 2025/04/29 10:24:26 by weiyang          ###   ########.fr       */
+/*   Updated: 2025/04/30 14:42:07 by weiyang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char *ft_strtrim(char const *s1, char const *set)
+char	*ft_strtrim(char const *s1, char const *set)
 {
-	size_t		start;
-	size_t		end;
+	size_t	start;
+	size_t	end;
 	char	*ptr;
 
 	if (!s1 || !set)
@@ -27,6 +27,3 @@ char *ft_strtrim(char const *s1, char const *set)
 	ptr = ft_substr(s1, start, end - start);
 	return (ptr);
 }
-
-		
-

@@ -1,28 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcmp.c                                        :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: weiyang <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/29 07:51:59 by weiyang           #+#    #+#             */
-/*   Updated: 2025/04/30 14:25:38 by weiyang          ###   ########.fr       */
+/*   Created: 2025/04/30 14:11:15 by weiyang           #+#    #+#             */
+/*   Updated: 2025/04/30 14:16:46 by weiyang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_memcmp(const void *s1, const void *s2, size_t n)
+int	ft_toupper(int c)
 {
-	const unsigned char	*ptr1;
-	const unsigned char	*ptr2;
-
-	ptr1 = (const unsigned char *)s1;
-	ptr2 = (const unsigned char *)s2;
-	while ((*s1 || *s2) && n > 0)
-	{
-		if (*s1 != *s2)
-			return (*s1 - *s2);
-		s1++;
-		s2++;
-	}
-	return (0);
+	if (c >= 'a' && c <= 'z')
+		c -= 32;
+	return (c);
 }

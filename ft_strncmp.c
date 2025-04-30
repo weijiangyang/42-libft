@@ -6,11 +6,11 @@
 /*   By: weiyang <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 07:34:54 by weiyang           #+#    #+#             */
-/*   Updated: 2025/04/29 07:43:42 by weiyang          ###   ########.fr       */
+/*   Updated: 2025/04/30 14:23:59 by weiyang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_strncmp(const char *s1, const char *s2, size_t n)
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	int	i;
 
@@ -23,5 +23,3 @@ int ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (0);
 }	
-
-
