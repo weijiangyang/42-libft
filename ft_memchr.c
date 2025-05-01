@@ -6,22 +6,23 @@
 /*   By: weiyang <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 07:44:41 by weiyang           #+#    #+#             */
-/*   Updated: 2025/04/30 14:24:32 by weiyang          ###   ########.fr       */
+/*   Updated: 2025/05/01 11:30:08 by weiyang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	unsigned char	*ptr;
+	const unsigned char	*ptr;
 	unsigned char	ch;
 
-	ptr = (unsigned char *)s;
+	ptr = (const unsigned char *)s;
 	ch = (unsigned char)c;
 	while (n > 0)
 	{
 		if (*ptr == ch)
-			return (void *ptr);
+			return ((void *)ptr);
 		ptr++;
+		n--;
 	}
 	return (NULL);
 }

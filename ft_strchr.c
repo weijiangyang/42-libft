@@ -6,7 +6,7 @@
 /*   By: weiyang <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 07:10:18 by weiyang           #+#    #+#             */
-/*   Updated: 2025/04/30 14:22:21 by weiyang          ###   ########.fr       */
+/*   Updated: 2025/05/01 10:31:41 by weiyang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,6 @@ char	*ft_strchr(const char *s, int c)
 		s++;
 	}
 	if (c == '\0')
-		return (char *s);
+		return ((char *)s);
 	return (NULL);
 }

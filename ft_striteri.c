@@ -6,13 +6,13 @@
 /*   By: weiyang <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/30 11:21:11 by weiyang           #+#    #+#             */
-/*   Updated: 2025/04/30 16:44:51 by weiyang          ###   ########.fr       */
+/*   Updated: 2025/05/01 12:00:28 by weiyang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
-	int	i;
+	unsigned int	i;
 
 	i = 0;
 	if (!s || !f)

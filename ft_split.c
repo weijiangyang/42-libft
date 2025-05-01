@@ -6,7 +6,7 @@
 /*   By: weiyang <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 10:24:55 by weiyang           #+#    #+#             */
-/*   Updated: 2025/04/30 16:26:22 by weiyang          ###   ########.fr       */
+/*   Updated: 2025/05/01 11:55:25 by weiyang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,6 +97,8 @@ char	**ft_split(char const *s, char c)
 	char	**arr;
 	int		nbr_words;
 
+	if (!s)
+		return (NULL);
 	nbr_words = count_words(s, c);
 	arr = (char **)malloc ((nbr_words + 1) * sizeof (char *));
 	if (!arr)

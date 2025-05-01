@@ -6,20 +6,28 @@
 /*   By: weiyang <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 09:17:28 by weiyang           #+#    #+#             */
-/*   Updated: 2025/04/30 16:52:36 by weiyang          ###   ########.fr       */
+/*   Updated: 2025/05/01 12:47:15 by weiyang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
+int     ft_strlen(char *str);
+
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*ptr;
 	size_t		i;			
+	size_t		str_len;
 
 	i = 0;
 	if (!s)
 		return (NULL);
+	str_len = ft_strlen(s);
+	if (start >= str_len)
+		return (NULL);
+	if (len > str_len - start)
+		len = str_len - start;
 	ptr = (char *)malloc ((len + 1) * sizeof (char));
 	if (!ptr)
 		return (NULL);

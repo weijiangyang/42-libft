@@ -6,12 +6,10 @@
 /*   By: weiyang <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/28 07:47:45 by weiyang           #+#    #+#             */
-/*   Updated: 2025/04/30 13:51:45 by weiyang          ###   ########.fr       */
+/*   Updated: 2025/05/01 11:38:36 by weiyang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
-#include <stdio.h>
 #include <string.h>
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
@@ -19,14 +17,15 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	unsigned char		*d;
 	const unsigned char	*s;
 
-	if (!dst && !src)
+	if (!dst || !src)
+
 		return (NULL);
 	d = (unsigned char *)dst;
 	s = (const unsigned char *)src;
 	if (d < s)
 	{
 		while (len--)
-		*d++ = *s++;
+			*d++ = *s++;
 	}
 	else
 	{
