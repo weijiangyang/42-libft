@@ -6,13 +6,13 @@
 /*   By: weiyang <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/30 11:49:55 by weiyang           #+#    #+#             */
-/*   Updated: 2025/05/01 11:52:21 by weiyang          ###   ########.fr       */
+/*   Updated: 2025/05/02 08:11:17 by weiyang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <sring.h>
 
-void    ft_putchar_fd(char c, int fd);
+void	ft_putchar_fd(char c, int fd);
 
 void	ft_putstr_fd(char *s, int fd)
 {

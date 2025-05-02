@@ -6,7 +6,7 @@
 /*   By: weiyang <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/30 08:15:57 by weiyang           #+#    #+#             */
-/*   Updated: 2025/05/01 11:26:58 by weiyang          ###   ########.fr       */
+/*   Updated: 2025/05/02 07:55:56 by weiyang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,17 +34,16 @@ int	len_number(int n)
 
 char	*ft_itoa(int n)
 {
-	int		len_nbr;
 	char	*str;
 	int		i;
 	long	nb;
 
-	nb = n;
-	len_nbr = len_number(nb);
-	i = len_nbr - 1;
-	str = (char *)malloc (sizeof (char) * (len_nbr + 1));
+	nb = (long)n;
+	i = len_number(nb) - 1;
+	str = (char *)malloc (sizeof (char) * (len_number(nb) + 1));
 	if (!str)
 		return (NULL);
+	str[i + 1] = '\0';
 	if (nb < 0)
 	{
 		str[0] = '-';
@@ -58,7 +57,6 @@ char	*ft_itoa(int n)
 		i--;
 		nb /= 10;
 	}
-	str[len_nbr] = '\0';
 	return (str);
 }
 /*

@@ -6,11 +6,11 @@
 /*   By: weiyang <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/25 12:18:38 by weiyang           #+#    #+#             */
-/*   Updated: 2025/05/01 11:15:16 by weiyang          ###   ########.fr       */
+/*   Updated: 2025/05/02 08:09:08 by weiyang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void    *ft_memset(void *s, int c, size_t n);
+void	*ft_memset(void *s, int c, size_t n);
 
 void	ft_bzero(void *s, size_t n)
 {

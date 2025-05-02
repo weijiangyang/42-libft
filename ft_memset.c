@@ -6,7 +6,7 @@
 /*   By: weiyang <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/25 10:42:15 by weiyang           #+#    #+#             */
-/*   Updated: 2025/05/01 11:41:33 by weiyang          ###   ########.fr       */
+/*   Updated: 2025/05/02 07:58:21 by weiyang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	*ft_memset(void *s, int c, size_t n)
 {
 	unsigned char	*mem;
-	size_t		i;
+	size_t			i;
 
 	i = 0;
 	mem = (unsigned char *)s;

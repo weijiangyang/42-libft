@@ -6,11 +6,11 @@
 /*   By: weiyang <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/30 11:52:36 by weiyang           #+#    #+#             */
-/*   Updated: 2025/05/01 11:44:22 by weiyang          ###   ########.fr       */
+/*   Updated: 2025/05/02 08:12:24 by weiyang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void    ft_putchar_fd(char c, int fd);
+void	ft_putchar_fd(char c, int fd);
 
 void	ft_putendl_fd(char *s, int fd)
 {

@@ -6,19 +6,19 @@
 /*   By: weiyang <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 09:17:28 by weiyang           #+#    #+#             */
-/*   Updated: 2025/05/01 12:47:15 by weiyang          ###   ########.fr       */
+/*   Updated: 2025/05/02 08:06:43 by weiyang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-int     ft_strlen(char *str);
+int	ft_strlen(char *str);
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*ptr;
-	size_t		i;			
-	size_t		str_len;
+	size_t	i;	
+	size_t	str_len;
 
 	i = 0;
 	if (!s)
@@ -31,7 +31,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	ptr = (char *)malloc ((len + 1) * sizeof (char));
 	if (!ptr)
 		return (NULL);
-	while ( i < len && s[start + i])
+	while (i < len && s[start + i])
 	{
 		ptr[i] = s[start + i];
 		i++;
@@ -39,5 +39,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	ptr[i] = '\0';
 	return (ptr);
 }
-	
-	
