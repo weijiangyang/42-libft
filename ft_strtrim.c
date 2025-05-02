@@ -6,11 +6,13 @@
 /*   By: weiyang <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 09:44:25 by weiyang           #+#    #+#             */
-/*   Updated: 2025/04/30 14:42:07 by weiyang          ###   ########.fr       */
+/*   Updated: 2025/05/02 11:01:33 by weiyang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strtrim(char const *s1, char const *set)
+#include "libft.h"
+
+char	*ft_strtrim(const char *s1, const char *set)
 {
 	size_t	start;
 	size_t	end;

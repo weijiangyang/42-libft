@@ -6,13 +6,11 @@
 /*   By: weiyang <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 09:07:16 by weiyang           #+#    #+#             */
-/*   Updated: 2025/05/01 12:50:24 by weiyang          ###   ########.fr       */
+/*   Updated: 2025/05/02 11:40:00 by weiyang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-
-int	ft_strlen(char *s);
+#include "libft.h"
 
 char	*ft_strdup(const char *s)
 {

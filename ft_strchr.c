@@ -6,9 +6,11 @@
 /*   By: weiyang <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 07:10:18 by weiyang           #+#    #+#             */
-/*   Updated: 2025/05/01 10:31:41 by weiyang          ###   ########.fr       */
+/*   Updated: 2025/05/02 10:43:23 by weiyang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*ft_strchr(const char *s, int c)
 {

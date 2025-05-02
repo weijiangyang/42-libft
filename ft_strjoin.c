@@ -6,11 +6,11 @@
 /*   By: weiyang <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 09:32:36 by weiyang           #+#    #+#             */
-/*   Updated: 2025/04/30 14:35:11 by weiyang          ###   ########.fr       */
+/*   Updated: 2025/05/02 11:01:03 by weiyang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {

@@ -6,11 +6,13 @@
 /*   By: weiyang <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/25 10:39:27 by weiyang           #+#    #+#             */
-/*   Updated: 2025/04/25 10:41:55 by weiyang          ###   ########.fr       */
+/*   Updated: 2025/05/02 11:08:30 by weiyang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
+#include "libft.h"
+
+int	ft_strlen(const char *str)
 {
 	int	len;
 

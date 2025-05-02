@@ -6,11 +6,11 @@
 /*   By: weiyang <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 10:24:55 by weiyang           #+#    #+#             */
-/*   Updated: 2025/05/01 11:55:25 by weiyang          ###   ########.fr       */
+/*   Updated: 2025/05/02 11:01:54 by weiyang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 int	count_words(char const *s, char c)
 {

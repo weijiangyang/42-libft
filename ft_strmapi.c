@@ -6,15 +6,17 @@
 /*   By: weiyang <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/30 11:08:04 by weiyang           #+#    #+#             */
-/*   Updated: 2025/04/30 16:43:20 by weiyang          ###   ########.fr       */
+/*   Updated: 2025/05/02 11:45:10 by weiyang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
+#include "libft.h"
+
+char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 {
-	int		size;
+	unsigned int		size;
 	char	*result;
-	int		i;
+	unsigned int		i;
 
 	i = 0;
 	if (!s || !f)
