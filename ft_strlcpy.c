@@ -6,7 +6,7 @@
 /*   By: weiyang <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/28 09:16:36 by weiyang           #+#    #+#             */
-/*   Updated: 2025/05/02 11:13:55 by weiyang          ###   ########.fr       */
+/*   Updated: 2025/05/05 17:14:51 by weijiangyang     ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,4 +29,4 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 		dst[i] = '\0';
 	}
 	return (len_src);
-}	
+}

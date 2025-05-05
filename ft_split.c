@@ -6,7 +6,7 @@
 /*   By: weiyang <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 10:24:55 by weiyang           #+#    #+#             */
-/*   Updated: 2025/05/02 11:01:54 by weiyang          ###   ########.fr       */
+/*   Updated: 2025/05/05 17:14:16 by weijiangyang     ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int	count_words(char const *s, char c)
 		else if (*s == c)
 			in_word = 0;
 		s++;
-	}	
+	}
 	return (count);
 }
 

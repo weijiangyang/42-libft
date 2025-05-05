@@ -6,7 +6,7 @@
 /*   By: weiyang <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 07:29:30 by weiyang           #+#    #+#             */
-/*   Updated: 2025/05/02 10:43:46 by weiyang          ###   ########.fr       */
+/*   Updated: 2025/05/05 17:11:06 by weijiangyang     ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*ft_strrchr(const char *s, int c)
 			lastoccurrence = (char *)s;
 		s++;
 	}
-	if (c == '\0')
+	if ((char)c == '\0')
 		return ((char *)s);
 	return (lastoccurrence);
 }

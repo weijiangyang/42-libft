@@ -6,7 +6,7 @@
 /*   By: weiyang <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/28 10:18:12 by weiyang           #+#    #+#             */
-/*   Updated: 2025/05/02 11:32:48 by weiyang          ###   ########.fr       */
+/*   Updated: 2025/05/05 17:02:28 by weijiangyang     ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,6 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	size_t	i;
 
 	i = 0;
-	if (!src)
-		return (0);
 	dst_len = ft_strlen(dst);
 	src_len = ft_strlen(src);
 	if (!dst && size == 0)
