@@ -6,7 +6,7 @@
 /*   By: weijiangyang <weijiangyang@laposte.net>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/18 21:07:32 by weijiangyang      #+#    #+#             */
-/*   Updated: 2025/05/18 21:08:46 by weijiangyang     ###   ########.fr       */
+/*   Updated: 2025/05/19 08:55:08 by weiyang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,3 +23,20 @@ t_list	*ft_lstnew(void *content)
 	new_node->next = NULL;
 	return (new_node);
 }
+
+/*#include <stdio.h>
+
+int main(void)
+{
+    t_list *node = ft_lstnew("hello, i'm a data");
+
+    if (!node)
+    {
+        printf("Erreur d'allocation\n");
+        return (1);
+    }
+
+    printf("Contenu : %s\n", (char *)node->content);
+    return (0);
+}
+*/

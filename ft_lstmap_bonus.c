@@ -6,7 +6,7 @@
 /*   By: weijiangyang <weijiangyang@laposte.net>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/18 20:49:08 by weijiangyang      #+#    #+#             */
-/*   Updated: 2025/05/18 22:31:30 by weijiangyang     ###   ########.fr       */
+/*   Updated: 2025/05/19 09:22:12 by weiyang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	while (lst)
 	{
 		new_content = f(lst->content);
-		new_elem = ft_lstnew(f(lst->content));
+		new_elem = ft_lstnew(new_content);
 		if (!new_elem)
 		{
 			del(new_content);
@@ -36,4 +36,3 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	}
 	return (new_list);
 }
-
