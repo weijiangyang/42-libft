@@ -6,7 +6,7 @@
 /*   By: weiyang <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 10:24:55 by weiyang           #+#    #+#             */
-/*   Updated: 2025/05/05 17:14:16 by weijiangyang     ###   ########.fr       */
+/*   Updated: 2025/05/18 22:14:08 by weijiangyang     ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,6 +82,7 @@ char	**ft_split_1(char **arr, char const *s, char c, int nbr_words)
 			{
 				while (i >= 0)
 					free(arr[i--]);
+				free (arr);
 				return (NULL);
 			}
 			s += len_word(s, c);
